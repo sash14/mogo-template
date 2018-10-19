@@ -1,0 +1,213 @@
+@import url("theme.less");
+
+footer {
+  display: flex;
+  justify-content: center;
+  background: #f8f8f8;
+  margin-top: 84px;
+  .footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 75px;
+    padding-bottom: 70px;
+    border-bottom: 1px solid #e5e5e5;
+    .footer-about {
+      width: 460px;
+      .footer-logo {
+        span {
+          font-family: "Montserrat";
+          color: #cccccc;
+          font-size: 46px;
+          font-weight: 700;
+        }
+      }
+    }
+    .footer-about-desc {
+      margin-top: 42px;
+      font-family: "Roboto";
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+    .info-followers {
+      margin-top: 49px;
+      span {
+        font-family: "Montserrat";
+        color: #333333;
+        font-size: 14px;
+        font-weight: 400;
+      }
+      span:first-child {
+        font-size: 18px;
+        font-weight: 700;
+      }
+    }
+    .grey-line {
+      margin-top: 18px;
+      margin-bottom: 18px;
+      background-color: #e5e5e5;
+      height: 1px;
+    }
+    .social-links {
+      display: flex;
+      span {
+        font-family: "Roboto";
+        color: #999999;
+        font-size: 15px;
+        font-weight: 300;
+        font-style: italic;
+        line-height: 24px;
+        margin-right: 23px;
+      }
+      .links-wrap {
+        display: flex;
+        justify-content: space-between;
+        width: 220px;
+        i {
+          color: @green;
+        }
+        i:hover {
+          color: #333333;
+          transition: 0.3s;
+        }
+      }
+    }
+
+    .form-wrap {
+      margin-top: 40px;
+      form {
+        display: flex;
+        input {
+          width: 230px;
+          height: 40px;
+          border: 1px solid #e7e7e7;
+          padding: 13px 14px 13px 14px;
+          font-family: "Roboto";
+          color: #cccccc;
+          font-size: 15px;
+          font-weight: 300;
+          font-style: italic;
+          line-height: 24px;
+        }
+        button {
+          border: none;
+          padding: 12px;
+          background-color: @green;
+          width: 150px;
+          height: 40px;
+          font-family: "Montserrat";
+          color: #ffffff;
+          font-size: 14px;
+          font-weight: 700;
+          text-transform: uppercase;
+          cursor: pointer;
+        }
+        button:hover {
+          background: @coral;
+          transition: 0.2s;
+        }
+      }
+    }
+    .footer-blogs {
+      width: 340px;
+      .blog-wrap {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 312px;
+        .blog-item {
+          display: flex;
+          justify-content: space-between;
+          img {
+            height: 79px;
+          }
+          .blog-header {
+            padding-left: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .headers-wrap {
+              h5 {
+                font-family: "Montserrat";
+                color: #333333;
+                font-size: 12px;
+                font-weight: 600;
+                line-height: 18px;
+                text-transform: uppercase;
+              }
+              span {
+                font-family: "Roboto";
+                color: #999999;
+                font-size: 13px;
+                font-weight: 300;
+                font-style: italic;
+                line-height: 24px;
+              }
+              a {
+                text-decoration: none;
+                color: #333333;
+              }
+              a:hover {
+                color: @green;
+                transition: 0.3s;
+              }
+            }
+          }
+        }
+      }
+    }
+    .footer-inst {
+      width: 270px;
+      .inst-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        img {
+          width: 88px;
+          margin: 1px;
+        }
+      }
+      span {
+        a {
+          font-family: "Roboto";
+          color: #333333;
+          font-size: 13px;
+          font-weight: 300;
+          font-style: italic;
+          line-height: 24px;
+          color: #999999;
+          text-decoration: none;
+        }
+        a:hover {
+          color: @green;
+          transition: 0.3s;
+        }
+      }
+    }
+    .footer-head {
+      margin-bottom: 40px;
+      span {
+        text-transform: uppercase;
+        font-family: "Montserrat";
+        color: #333333;
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+  }
+  .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+  p {
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 400;
+  }
+  a {
+    color: @coral;
+  }
+}
